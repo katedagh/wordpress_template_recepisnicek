@@ -1,0 +1,83 @@
+:root { 
+    --orange: #ffca7a;
+    --cream: #fff2dd;
+    --brown: #58330a;
+    --green: #bae397;
+    --yellow: #fdf58d;
+    --pink:#ff9dd9 ;
+    --orange-line: #fecc81;
+    --trans-green: rgba(226, 245, 183, 0.5);
+    --trans-orange: rgba(254, 217, 151, 0.5); 
+    --trans-yellow: rgba(253, 243, 149, 0.5);    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: url("../../images/background.png");
+    background-repeat: repeat;
+    position: relative;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+button {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box
+}
+
+.page-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin-top: 30px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-inline: 7px;
+}
+
+.error-text {
+   
+    font-size: 2rem;
+    text-align: center;
+}
+
+.error-img {
+    height: 300px;
+    width: auto;
+}
+
+
+.privacy-policy, .contact {
+    margin-inline: 7px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin: 5px;      
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 0;
+    }
+}

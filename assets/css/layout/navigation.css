@@ -1,0 +1,229 @@
+.navbar {
+    background-color: var(--green);
+    max-width: fit-content;
+    text-align: center;
+    border-radius: 50px;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.sticky {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    padding: 8px 0;
+}
+
+.navbar ul li a {
+    padding: 11px 18px;
+    font-weight: 600;
+    font-size: 1.1rem;   
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover,
+#search-icon:hover {
+    background-color: var(--trans-green);
+    border-radius: 50px;
+}
+
+.nav-search input[type="search"] {
+    border-radius: 10px;
+}
+
+#search-icon {
+    margin-right: 20px;
+    padding-inline: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-icon img {
+    height: 20px;
+    width: 20px;
+}
+
+#search-form {
+    display: none;
+    position: absolute;
+    top: 43px;
+    left: -20px;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--trans-green);
+    border-radius: 20px;
+    border-top-left-radius: 0;
+}
+
+#search-form.visible {
+    display: block;
+}
+
+#searchsubmit {
+    background-color: var(--green);
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+#mobile-menu-icon {
+    display: none;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--green);
+    border-radius: 20px;
+    padding: 0px 0;
+    min-width: 100%;
+    z-index: 1001;
+    flex-direction: column;
+}
+
+.navbar .sub-menu li {
+    padding: 0;
+}
+
+.navbar .sub-menu li a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+
+.navbar ul li:hover > .sub-menu {
+    display: flex;
+}
+
+
+@media (max-width:600px) {
+    
+    #menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 50px;
+        transform: translateX(100%); 
+        transition: transform 0.3s ease;
+        opacity: 0.95;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .navbar ul li a {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #mobile-menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40px;
+        height: 35px;
+        color: black;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        background-color: var(--green);
+        padding: 5px;
+        border-radius: 50%;
+        z-index: 1002;
+    }
+
+    #mobile-menu-icon span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: black;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    #mobile-menu-icon.open span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 5px);
+    }
+
+    #mobile-menu-icon.open span:nth-child(2) {
+        opacity: 0; /* prostřední čára zmizí */
+    }
+
+    #mobile-menu-icon.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -5px);
+    }
+
+    #menu.active {
+        transform: translateX(0);
+    }
+
+    body.menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+   #search-icon img {
+    height: 35px;
+    width: 35px;
+}
+
+    #search-form {
+        background-color: var(--green);
+        border-radius: 0;
+        left: -90px;
+    }
+
+    #searchsubmit {
+        background-color: #333;
+        color: white;
+    }
+
+    .navbar ul.sub-menu {
+    position: static;
+    display: none;
+    background: none;
+}
+
+.navbar ul.sub-menu.open {
+    display: flex;
+}
+
+.navbar .sub-menu li a {
+    font-size: 1.2rem;
+    
+}
+}

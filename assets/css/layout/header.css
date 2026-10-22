@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 40px 0 10px;
+}
+
+.header img {
+    margin: 10px;
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+    .header img {
+        width: 45px;
+        height: auto;
+    }
+  
+  
+}
