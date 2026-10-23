@@ -10,7 +10,7 @@
 }
 
 .cookie-banner a {
-  color: var(--orange);
+  color: var(--primary);
 }
 .cookie-banner p {
   color: #ffffff;
@@ -22,7 +22,7 @@
 
 .cookie-buttons button {
   margin-right: 0.5rem;
-  background-color: var(--green);
+  background-color: var(--primary);
   padding: 5px 20px;
   border-radius: 50px;
   cursor: pointer;

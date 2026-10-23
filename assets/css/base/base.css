@@ -1,14 +1,10 @@
 :root { 
-    --orange: #ffca7a;
-    --cream: #fff2dd;
-    --brown: #58330a;
-    --green: #bae397;
-    --yellow: #fdf58d;
-    --pink:#ff9dd9 ;
-    --orange-line: #fecc81;
-    --trans-green: rgba(226, 245, 183, 0.5);
-    --trans-orange: rgba(254, 217, 151, 0.5); 
-    --trans-yellow: rgba(253, 243, 149, 0.5);    
+    --primary: #c75025;
+    --secondary: #534d41;
+    --tertiary: #f0cea0;
+    --quaternary: #fbf2c0;
+    --text-dark: #01161E;  
+    --text-light: #FFFCF9;
 }
 
 * {

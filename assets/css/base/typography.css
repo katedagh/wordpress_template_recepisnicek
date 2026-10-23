@@ -1,12 +1,14 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playwrite CZ", cursive;
     line-height: 1.8rem;
+    color: #01161E;
+
 }
 
 p, li, a, td, button, span{ 
     font-family: "Courier Prime", monospace;
     text-decoration: none;
-    color: black;
+    color: #01161E;
     line-height: 1.5rem;
 }
 
@@ -14,7 +16,7 @@ p, li, a, td, button, span{
     font-family: "Courier Prime", monospace;
     font-size: 3rem;
     font-weight: 900;
-    color: black;
+    color: #01161E;
 }
 
 .header-subtitle {
@@ -56,7 +58,7 @@ p, li, a, td, button, span{
 
 .text-sm {
     font-size: 0.9rem;
-    color: white;
+    color: var(--text-light);
 }
 
 .wp-block-heading {
@@ -65,7 +67,7 @@ p, li, a, td, button, span{
 }
 
 footer p, footer li a {
-    color: white;
+    color: var(--text-light);
     font-size: 0.9rem;
 }
 
@@ -76,7 +78,7 @@ footer p {
 
 .footer-title {
     font-family: "Courier Prime", monospace;
-    color: white;
+    color: var(--text-light);
     font-size: 0.9rem;
     margin-bottom: 5px;
 }

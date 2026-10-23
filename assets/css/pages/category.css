@@ -20,11 +20,11 @@
     transition: transform 0.3s ease;
     margin-top: 20px;
     padding: 20px;
-    background-color: var(--trans-orange);
+    background-color: var(--tertiary);
 }
 
 .post-cat-link:nth-of-type(odd) {
-   background-color: var(--trans-yellow);
+   background-color: var(--quaternary);
 }
 
 

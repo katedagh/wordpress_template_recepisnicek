@@ -13,12 +13,13 @@
 
 .overwiev {
     display: flex;
-    background-color: var(--trans-orange);
+    background-color: var(--quaternary);
     padding: 8px;
 }
 
 .overwiev td {
     padding: 5px 20px 5px 10px;
+
 }
 
 .content {
@@ -37,7 +38,7 @@
    
 }
 .side-list {
-    background-color: var(--trans-yellow);
+    background-color: var(--quaternary);
     height: fit-content;
     padding: 5px;
 }
@@ -117,7 +118,7 @@
 }
 
 .switch input:checked + .slider {
-    background-color: var(--orange);
+    background-color: var(--primary);
 }
 
 .switch input:checked + .slider::before {

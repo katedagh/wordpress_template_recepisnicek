@@ -1,5 +1,5 @@
 .navbar {
-    background-color: var(--green);
+    background-color: var(--primary);
     max-width: fit-content;
     text-align: center;
     border-radius: 50px;
@@ -19,7 +19,8 @@
 }
 
 .navbar ul {
-    display: flex;
+     display: inline-flex;
+    align-items: center;
     list-style: none;
     align-items: center;
     padding: 0;
@@ -28,20 +29,22 @@
 
 .navbar ul li {
     padding: 8px 0;
+    color: var(--text-light);
 }
 
 .navbar ul li a {
     padding: 11px 18px;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 1.1rem;   
     text-transform: uppercase;
-    color: black;
+    color: var(--text-light);
     text-decoration: none;
 }
 
 .navbar ul li a:hover,
 #search-icon:hover {
-    background-color: var(--trans-green);
+    background-color: var(--tertiary);
+    color: var(--primary);
     border-radius: 50px;
 }
 
@@ -69,7 +72,8 @@
     top: 43px;
     left: -20px;
     padding: 10px 20px 10px 20px;
-    background-color: var(--trans-green);
+    background-color: var(--primary);
+    color: var(--text-light);
     border-radius: 20px;
     border-top-left-radius: 0;
 }
@@ -79,7 +83,7 @@
 }
 
 #searchsubmit {
-    background-color: var(--green);
+    background-color: var(--primary);
     border: none;
     border-radius: 50px;
     padding: 5px 10px;
@@ -99,7 +103,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--green);
+    background-color: var(--primary);
     border-radius: 20px;
     padding: 0px 0;
     min-width: 100%;
@@ -159,7 +163,7 @@
         position: fixed;
         top: 15px;
         right: 15px;
-        background-color: var(--green);
+        background-color: var(--primary);
         padding: 5px;
         border-radius: 50%;
         z-index: 1002;
@@ -169,7 +173,7 @@
         display: block;
         height: 4px;
         width: 100%;
-        background-color: black;
+        background-color: var(--text-dark);
         border-radius: 2px;
         transition: all 0.3s ease;
     }
@@ -202,14 +206,14 @@
 }
 
     #search-form {
-        background-color: var(--green);
+        background-color: var(--primary);
         border-radius: 0;
         left: -90px;
     }
 
     #searchsubmit {
         background-color: #333;
-        color: white;
+        color: var(--text-light);
     }
 
     .navbar ul.sub-menu {
