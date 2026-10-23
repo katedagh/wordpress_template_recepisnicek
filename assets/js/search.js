@@ -1,16 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const searchIcon = document.getElementById("search-icon");
-    const searchForm = document.getElementById("search-form");
+    const searchIcon = document.querySelector("#search-icon");
+    const searchForm = document.querySelector("#search-form");
 
-    // Toggle visibility when clicking the icon
     searchIcon.addEventListener("click", function(e) {
-        // Only toggle if the image was clicked, not the form itself
-        if (e.target.tagName.toLowerCase() === 'img') {
+
+        if (e.target.tagName.toLowerCase() === 'svg') {
             searchForm.classList.toggle("visible");
         }
     });
 
-    // Optional: click outside to close
     document.addEventListener("click", function(e) {
         if (!searchIcon.contains(e.target)) {
             searchForm.classList.remove("visible");

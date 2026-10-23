@@ -27,8 +27,8 @@
                  alt="Logo" width="90" height="90">
         <?php } ?>
 
-        <h1 class="header-title">
-            <a href="<?php echo esc_url( home_url('/') ); ?>">
+        <h1 class="header-title" >
+            <a id="typing-title" href="<?php echo esc_url( home_url('/') ); ?>">
             <?php bloginfo('name'); ?>
             </a>
         </h1>

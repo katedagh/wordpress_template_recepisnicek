@@ -1,8 +1,7 @@
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
 
-    // sticky navbar jen když není otevřené menu
-    if (window.scrollY > 100 && !document.body.classList.contains('menu-open')) {
+    if (window.scrollY > 150 && !document.body.classList.contains('menu-open')) {
         navbar.classList.add('sticky');
     } else {
         navbar.classList.remove('sticky');
@@ -18,12 +17,10 @@ let scrollPosition = 0;
 mobileMenuButton.addEventListener('click', () => {
 
     if (!body.classList.contains('menu-open')) {
-        // 🔒 otevření menu – zakázat scroll
         scrollPosition = window.scrollY;
         body.style.top = `-${scrollPosition}px`;
         body.classList.add('menu-open');
     } else {
-        // 🔓 zavření menu – vrátit scroll
         body.classList.remove('menu-open');
         body.style.top = '';
         window.scrollTo(0, scrollPosition);
@@ -50,3 +47,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// type website header js
+const title = document.querySelector("#typing-title");
+const text = title.textContent;
+
+title.textContent = "";
+
+let index = 0;
+
+function typeText() {
+  if (index < text.length) {
+    title.textContent += text[index];
+    index++;
+    setTimeout(typeText, 100);
+  }
+}
+
+typeText();
