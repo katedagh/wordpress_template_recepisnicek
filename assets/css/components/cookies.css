@@ -13,7 +13,7 @@
   color: var(--primary);
 }
 .cookie-banner p {
-  color: #ffffff;
+  color: var(--text-light);
 }
 
 .cookie-buttons {
